@@ -102,7 +102,8 @@ const Skills = () => {
                                     (skill === "flutter") |
                                     (skill === "csharp") |
                                     (skill === "react_native") |
-                                    (skill === "postgressql")
+                                    (skill === "postgressql") 
+                                    
                                 ) {
                                     return (
                                         <Image

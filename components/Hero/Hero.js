@@ -9,7 +9,6 @@ import Profiles from "../Profiles/Profiles";
 
 const Hero = () => {
     const [lottie, setLottie] = useState();
-
     const typedEl = useRef(null);
     const targetSection = useRef(null);
     const lottieRef = useRef(null);
@@ -35,18 +34,19 @@ const Hero = () => {
                 "<"
             );
 
-        return () => typed.destroy();
-    }, [typedEl, targetSection]);
+        const handleScroll = () => {
+            if (window.pageYOffset === 0) {
+                revealTl.restart();
+            }
+        };
 
-    // useEffect(() => {
-    //   lottie.loadAnimation({
-    //     container: lottieRef.current,
-    //     renderer: "svg",
-    //     loop: true,
-    //     autoplay: true,
-    //     animationData: require("../../public/lottie/lottie.json"),
-    //   });
-    // }, []);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            typed.destroy();
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [typedEl, targetSection, options]);
 
     useEffect(() => {
         import("lottie-web").then((Lottie) => setLottie(Lottie.default));
