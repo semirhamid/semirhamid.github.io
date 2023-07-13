@@ -5,6 +5,7 @@ import { MENULINKS, TYPED_STRINGS } from "../../constants";
 import styles from "./Hero.module.scss";
 import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
+import Image from "next/image";
 // import lottie from "lottie-web";
 
 const Hero = () => {
@@ -123,7 +124,9 @@ const Hero = () => {
             <div
                 className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
                 ref={lottieRef}
-            ></div>
+            >
+                
+            </div>
         </section>
     );
 };
