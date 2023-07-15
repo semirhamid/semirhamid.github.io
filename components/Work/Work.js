@@ -96,7 +96,7 @@ const Work = ({ clientWidth }) => {
                 transform: "translate3d(0, 0, 0) rotateX(0deg)",
                 transition: "500ms",
             });
-        }, 3000);
+        }, 3100);
     };
 
     return (
@@ -133,7 +133,7 @@ const Work = ({ clientWidth }) => {
                         <div className={`wrapper ${isActive ? "active" : ""}`}>
                             <div className="page">
                                 <p>
-                                    Choose a compan
+                                    Choose a company
                                     <span className="relative">
                                         y
                                         <span className="absolute h-3 w-3">

@@ -30,8 +30,8 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-    "A versatile Full Stack and mobile developer",
-    "I craft innovative solutions for the web and mobile platforms",
+    "Full Stack and mobile developer",
+    "Innovative solutions for the all platforms",
     "Creating Modern & Aesthetic Apps",
 ];
 

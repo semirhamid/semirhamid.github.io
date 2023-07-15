@@ -16,10 +16,10 @@ const Hero = () => {
 
     const options = {
         strings: TYPED_STRINGS,
-        typeSpeed: 50,
-        startDelay: 1500,
-        backSpeed: 50,
-        backDelay: 8000,
+        typeSpeed: 160,
+        startDelay: 1000,
+        backSpeed: 360,
+        backDelay: 1000,
         loop: true,
     };
 
@@ -31,7 +31,7 @@ const Hero = () => {
             .to(targetSection.current, { opacity: 1, duration: 2 })
             .from(
                 targetSection.current.querySelectorAll(".seq"),
-                { opacity: 0, duration: 0.5, stagger: 0.5 },
+                { opacity: 1, duration: 0.5, stagger: 0.5 },
                 "<"
             );
 
@@ -61,6 +61,7 @@ const Hero = () => {
                 loop: true,
                 autoplay: true,
                 animationData: require("../../public/lottie/lottie.json"),
+                
             });
 
             return () => animation.destroy();
@@ -122,7 +123,7 @@ const Hero = () => {
                 </div>
             </div>
             <div
-                className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
+                className="absolute invisible w-4/12 bottom-1.5 md:visible md:right-12 2xl:right-16"
                 ref={lottieRef}
             >
                 
