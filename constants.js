@@ -77,14 +77,32 @@ export const SKILLS = {
         "tailwindcss",
         "styledcomponents",
         "flutter",
-        // "nodejs",
-        // "express",
+        "nodejs",
+        "express",
     ],
     databases: ["mysql", "mongodb", "postgressql"],
     other: ["wordpress", "git", "sanity-io"],
 };
 
 export const PROJECTS = [
+    {
+        name: "Place to be Ethiopia Mobile App",
+        image: "/projects/p2bmobile.png",
+        blurImage: "/projects/blur/p2bmobileblur.png",
+        description: "React + css",
+        gradient: ["#0EF32D", "#0BF83E"],
+        url: "https://play.google.com/store/apps/details?id=com.afromina.placetobe",
+        tech: ["react", "mui", "mapbox"],
+    },
+    {
+        name: "Place to be Ethiopia Web",
+        image: "/projects/p2bweb.png",
+        blurImage: "/projects/blur/p2bwebblur.png",
+        description: "React + css",
+        gradient: ["#4687F1", "#147AED"],
+        url: "https://placetobeethiopia.com/",
+        tech: ["react", "nextjs", "tailwindcss", "mapbox"],
+    },
     {
         name: "Bisrate Gebriel Internation School Management",
         image: "/projects/bgis.png",
@@ -178,6 +196,46 @@ export const PROJECTS = [
 ];
 
 export const WORK = [
+    {
+    company: "AfroMina Digitals",
+    title: "Front End and Mobile Developer",
+    location: "Addis Ababa, Ethiopia",
+    range: "May 2023 - Present",
+    responsibilities: [
+        "Collaborated with the AfroMina Digitals team to develop the 'Place to Be Ethiopia' project, a web and mobile application for event management and ticket sales.",
+        "Developed and maintained the frontend of the application using React and Material-UI (MUI) to create a visually appealing and user-friendly interface.",
+        "Utilized React Native to build the mobile version of the application, enabling users to access event details and purchase tickets from their smartphones.",
+        "Worked closely with the backend team to integrate frontend components with the necessary APIs to ensure seamless data flow and functionality.",
+        "Implemented responsive design principles to ensure the application's compatibility across various devices and screen sizes.",
+        "Contributed to the implementation of user authentication and authorization features to safeguard user data and manage access to certain functionalities.",
+        "Collaborated with UX/UI designers to transform wireframes and mockups into fully functional and aesthetically pleasing user interfaces.",
+        "Optimized the application's performance to provide a smooth and responsive user experience, minimizing load times and enhancing overall speed.",
+        "Participated in regular testing and debugging to identify and address any frontend-related issues or bugs.",
+        "Collaborated with the QA team to conduct usability testing and gather user feedback for further improvements.",
+        "Stayed up-to-date with the latest frontend and mobile development trends and best practices to continuously enhance the application's quality and user experience.",
+    ],
+    url: "https://afromina-digitals.com/",
+    },
+    {
+        company: "Bisrate Gebriel International School",
+        title: "Full Stack and Mobile Developer",
+        location: "Addis Ababa, Ethiopia",
+        range: "January 2022 - Present",
+        responsibilities: [
+            "Collaborated with a personal custom group of teachers to develop a comprehensive school management app for Bisrate Gebriel International School.",
+            "Developed and maintained web applications using technologies like React, NestJS, and ASP.NET Core to facilitate various school activities.",
+            "Designed and developed mobile applications using Flutter and React Native, allowing easy access to school management features on the go.",
+            "Built and maintained APIs using NestJS and ASP.NET Core, ensuring smooth communication between the frontend and backend systems.",
+            "Ensured the codebase was clean, efficient, and well-documented for better maintainability and future enhancements.",
+            "Worked closely with cross-functional teams to understand and implement software solutions that catered to specific school management needs.",
+            "Identified and resolved software issues promptly to maintain a reliable and seamless user experience.",
+            "Participated in code reviews and provided constructive feedback to fellow developers, fostering a collaborative and learning-oriented environment.",
+            "Optimized web and mobile applications for better performance, scalability, and security, ensuring an optimal user experience.",
+            "Conducted thorough testing of software releases to deliver high-quality, bug-free applications.",
+            "Contributed to the continuous improvement of the school management app, incorporating user feedback and innovative features.",
+        ],
+        url: "School's internal app, not publicly available",
+    },
     {
         company: "DEP",
         title: "Full Stack and Mobile Developer",
