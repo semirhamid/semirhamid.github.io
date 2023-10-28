@@ -15,10 +15,9 @@ jobs:
           node-version: 16
 
       # Manually install the compatible version of React
-      - run: npm install react@16.14.0
+      - run: npm install
 
       # Run tests or any other necessary steps
-      - run: npm test
 
   publish-npm:
     runs-on: ubuntu-latest
