@@ -15,7 +15,8 @@ jobs:
           node-version: 16
 
       # Manually install the compatible version of React
-      - run: npm install
+      - run: npm install --force
+
 
       # Run tests or any other necessary steps
 
