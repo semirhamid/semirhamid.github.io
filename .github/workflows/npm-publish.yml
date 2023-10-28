@@ -17,7 +17,7 @@ jobs:
       # Manually install the compatible version of React
       - run: npm install react@16.14.0
 
-      - run: npm ci
+      # Run tests or any other necessary steps
       - run: npm test
 
   publish-npm:
@@ -34,7 +34,7 @@ jobs:
       # Manually install the compatible version of React
       - run: npm install react@16.14.0
 
-      - run: npm ci
+      # Publish to npm
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
