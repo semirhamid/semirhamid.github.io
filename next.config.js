@@ -1,4 +1,6 @@
-const withPWA = require("next-pwa");
+const withPWA = require("next-pwa")({
+    dest: 'public',
+});
 
 module.exports = withPWA({
     webpack: (config) => {
@@ -12,12 +14,22 @@ module.exports = withPWA({
     },
     images: {
         domains: ["res.cloudinary.com"],
-        unoptimized: true, // Disable Image Optimization during export
+        unoptimized: true, 
     },
     pwa: {
         dest: "public",
         register: true,
         skipWaiting: true,
         disable: process.env.NODE_ENV === "development",
+        future: {
+            exclude: [
+                /\.DS_Store/,
+                "Thumbs.db",
+                ".git",
+                ".github",
+                ".vscode",
+                "node_modules",
+            ],
+        },
     },
 });
