@@ -112,6 +112,7 @@ export const PROJECTS = [
         url: "https://electriccarchargersuk.co.uk/",
         tech: ["css", "wordpress","php"],
     },
+    
     {
         name: "Virtue Gymnastic CO",
         image: "/projects/virtue.png",
