@@ -31,11 +31,6 @@ jobs:
             echo "command=add --force" >> $GITHUB_ENV
             echo "runner=yarn" >> $GITHUB_ENV
             exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_ENV
-            echo "command=install" >> $GITHUB_ENV
-            echo "runner=npm install" >> $GITHUB_ENV
-            exit 0
           else
             echo "Unable to determine package manager"
             exit 1
@@ -60,7 +55,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: yarn next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
