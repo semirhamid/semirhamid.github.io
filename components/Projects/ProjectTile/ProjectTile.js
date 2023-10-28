@@ -86,13 +86,18 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
                     <div className="flex flex-col pb-8">
                         {project.tech.map((el, i) => (
                             <img
-                                className={`${i % 2 === 0 && "ml-16"} mb-4`}
-                                src={`/projects/tech/${el}.svg`}
-                                alt={el}
-                                height={70}
-                                width={70}
-                                key={el}
-                            />
+    className={`${i % 2 === 0 && "ml-16"} mb-4`}
+    src={`/projects/tech/${el}.svg`}
+    alt={el}
+    height={70}
+    width={70}
+    key={el}
+    onError={(e) => {
+        e.target.onerror = null; // Prevent infinite loop if PNG also not found
+        e.target.src = `/projects/tech/${el}.png`; // Load PNG if SVG fails
+    }}
+/>
+
                         ))}
                     </div>
                 </div>

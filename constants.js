@@ -86,6 +86,42 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
+        name: "Columbus Italy",
+        image: "/projects/columbus.png",
+        blurImage: "/projects/blur/columbus-blur.png",
+        description: "Umbraco + Asp net core (On Progress)",
+        gradient: ["#F0B369", "#EA8F1F"],
+        url: "https://umbraco3ejqgybl5ics6.azurewebsites.net/",
+        tech: [ "sass","typescript","asp_net_core"],
+    },
+    {
+        name: "Berkeley Square Medical",
+        image: "/projects/berkeley.png",
+        blurImage: "/projects/blur/berkeley-blur.png",
+        description: "Wordpress + Custom Theme",
+        gradient: ["#522356", "#939504"],
+        url: "https://electriccarchargersuk.co.uk/",
+        tech: ["css", "wordpress","php"],
+    },
+    {
+        name: "ECC",
+        image: "/projects/ecc.png",
+        blurImage: "/projects/blur/ecc-blur.png",
+        description: "Wordpress + Custom Theme",
+        gradient: ["#81EEFF", "#0B9DF8"],
+        url: "https://electriccarchargersuk.co.uk/",
+        tech: ["css", "wordpress","php"],
+    },
+    {
+        name: "Virtue Gymnastic CO",
+        image: "/projects/virtue.png",
+        blurImage: "/projects/blur/virtue-blur.png",
+        description: "Next js + Strapi",
+        gradient: ["#81EEFF", "#0B9DF8"],
+        url: "https://virtue-gym-frontend-production.up.railway.app/",
+        tech: ["react", "nextjs", "tailwindcss"],
+    },
+    {
         name: "Place to be Ethiopia Mobile App",
         image: "/projects/p2bmobile.png",
         blurImage: "/projects/blur/p2bmobileblur.png",
