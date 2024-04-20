@@ -67,14 +67,14 @@ export default function Home() {
                             </div>
                             <div className="fixed top-0 left-0 h-screen w-screen -z-1"></div>
                             <Hero />
-                            <About1 clientHeight={clientHeight} />
+                            {/* <About1 clientHeight={clientHeight} /> */}
                             <Skills />
-                            <About2 clientHeight={clientHeight} />
                             <Projects
                                 isDesktop={isDesktop}
                                 clientHeight={clientHeight}
-                            />
+                                />
                             
+                            <About2 clientHeight={clientHeight} />
                             <Work clientWidth={clientWidth} />
                             <Collaboration clientHeight={clientHeight} />
                             <div className="pt-10 sm:pt-16 bg-gray-dark-4"></div>
