@@ -2,7 +2,7 @@ export const METADATA = {
     title: "Portfolio | Semir Hamid",
     description:
         "Semir Hamid is a Full Stack and mobile Developer from Ethiopia, interested in crafting beautiful and functional applications. Semir is pursuing his undergraduate from Addis Ababa University, Ethiopia.",
-    siteUrl: "https://semirhamid.com/",
+    siteUrl: "https://semirhamid.me/",
     twitterHandle: "@SemirHamid1756",
 };
 
@@ -86,12 +86,30 @@ export const SKILLS = {
 
 export const PROJECTS = [
     {
+        name: "Recognise Design ",
+        image: "/projects/recognise.png",
+        blurImage: "/projects/blur/recognise-blur.png",
+        description: "Company portfolio and showcase",
+        gradient:["#4687F1", "#147AED"],
+        url: "https://recognisedesign.com/",
+        tech: [ "wordpress","typescript","react"],
+    },
+    {
+        name: "ECC Admin panel",
+        image: "/projects/ecc-admin.png",
+        blurImage: "/projects/blur/ecc-admin-blur.png",
+        description: "ECC Admin Panel",
+        gradient:["#D664DA", "#D818DE"],
+        url: "https://columbusassicurazioni.it/",
+        tech: [ "sass","typescript","react", "nextjs"],
+    },
+    {
         name: "Columbus Italy",
         image: "/projects/columbus.png",
         blurImage: "/projects/blur/columbus-blur.png",
         description: "Umbraco + Asp net core (On Progress)",
         gradient: ["#F0B369", "#EA8F1F"],
-        url: "https://umbraco3ejqgybl5ics6.azurewebsites.net/",
+        url: "https://columbusassicurazioni.it/",
         tech: [ "sass","typescript","asp_net_core"],
     },
     {
